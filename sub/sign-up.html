@@ -3,15 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="백야:기담록 - 밤이 사라진 세계의 괴담 아카이브">
+  <meta name="description" content="백야:기담록 - 밤이 사라진 세계의 괴담 아카이브">
   <title>백야:기담록</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/login.css">
-  
+
 </head>
 
 <body>
@@ -32,32 +30,54 @@ content="백야:기담록 - 밤이 사라진 세계의 괴담 아카이브">
 
       <span class="nav-highlight"></span>
     </nav>
-  <div class="auth">
-    <button class="login"><a href="login.html">로그인</a></button>
-  </div>
+    <div class="auth">
+      <button class="login"><a href="login.html">로그인</a></button>
+    </div>
   </header>
 
-<div class="login-container">
+  <div class="login-container">
 
-  <div class="login-box">
+    <div class="login-box">
 
-    <img src="logo.png" class="login-logo">
+      <img src="logo.png" class="login-logo" alt="백야:기담록">
 
-    <h2>회원가입</h2>
+      <h2>회원가입</h2>
 
-    <input type="text" placeholder="아이디">
-    <input type="password" placeholder="비밀번호">
-    <input type="password" placeholder="비밀번호 확인">
+      <input type="text" placeholder="닉네임" required>
+      <input type="email" placeholder="이메일 주소" required>
+      <input type="text" placeholder="아이디" required>
 
-    <button class="login-btn">회원가입</button>
+      <input type="password" placeholder="비밀번호" required>
+      <input type="password" placeholder="비밀번호 확인" required>
 
-    <div class="extra">
-      <a href="login.html">이미 계정이 있으신가요?</a>
+      <label class="input-label">생년월일</label>
+      <input type="date" class="date-input" required>
+
+      <!-- 이용약관 -->
+      <div class="terms-box">
+
+        <label class="agree">
+          <input type="checkbox" required>
+          이용약관 및 개인정보처리방침에 동의합니다.
+        </label>
+
+        <label class="agree">
+          <input type="checkbox" required>
+          만 14세 이상입니다.
+        </label>
+
+      </div>
+
+      <button class="login-btn">회원가입</button>
+
+      <div class="extra">
+        <a href="login.html">이미 계정이 있으신가요?</a>
+      </div>
+
     </div>
 
   </div>
-
-</div>
-
+<script src="../js/script.js"></script>
 </body>
+
 </html>
