@@ -20,7 +20,8 @@ body {
 
 /* 로그인 박스 */
 .login-box {
-  width: 360px;
+  width:400px;
+  max-width:90%;
   padding: 40px;
   border: 1px solid #222;
   background: rgba(20,20,20,0.6);
@@ -81,4 +82,33 @@ body {
 
 .extra a:hover {
   color: #fff;
+}
+
+/* sing-up */
+.input-label{
+    display:block;
+    text-align:left;
+    margin:10px 0 6px;
+    color:#aaa;
+    font-size:14px;
+}
+
+.date-input{
+    width:100%;
+}
+
+.agree{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    margin-top:12px;
+
+    color:#ccc;
+    font-size:14px;
+}
+
+.agree input{
+    width:auto;
+    margin:0;
 }
