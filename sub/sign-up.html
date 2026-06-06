@@ -30,6 +30,7 @@
 
       <span class="nav-highlight"></span>
     </nav>
+
     <div class="auth">
       <button class="login"><a href="login.html">로그인</a></button>
     </div>
@@ -37,47 +38,64 @@
 
   <div class="login-container">
 
-    <div class="login-box">
-
+    <form id="signupForm" class="login-box">
       <img src="logo.png" class="login-logo" alt="백야:기담록">
 
       <h2>회원가입</h2>
+      <input type="text" id="nickname" placeholder="닉네임" minlength="2" maxlength="20" required>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="이메일" autocomplete="email" required>
+        <button type="button" onclick="sendCode()">
+          인증번호 발송
+        </button>
+      </div>
 
-      <input type="text" placeholder="닉네임" required>
-      <input type="email" placeholder="이메일 주소" required>
-      <input type="text" placeholder="아이디" required>
+      <p id="email-message"></p>
+      <div class="input-group">
+        <input type="text" id="authCode" placeholder="인증번호" maxlength="6" pattern="[0-9]{6}" required>
+        <button type="button" onclick="verifyCode()">
+          인증확인
+        </button>
+      </div>
 
-      <input type="password" placeholder="비밀번호" required>
-      <input type="password" placeholder="비밀번호 확인" required>
+
+      <input type="password" id="password-check" placeholder="비밀번호 확인" minlength="8" autocomplete="new-password"
+        required>
+      <p id="pw-message"></p>
+
+      <input type="password" id="password-check" placeholder="비밀번호 확인" autocomplete="new-password" required>
+      <p id="pw-check-message"></p>
 
       <label class="input-label">생년월일</label>
-      <input type="date" class="date-input" required>
+      <input type="date" id="birth" class="date-input" required>
 
       <!-- 이용약관 -->
       <div class="terms-box">
-
         <label class="agree">
-          <input type="checkbox" required>
+          <input type="checkbox" id="agreeTerms" required>
           이용약관 및 개인정보처리방침에 동의합니다.
         </label>
 
         <label class="agree">
-          <input type="checkbox" required>
+          <input type="checkbox" id="agreeAge" required>
           만 14세 이상입니다.
         </label>
-
       </div>
 
-      <button class="login-btn">회원가입</button>
+      <button type="submit" class="login-btn" id="signupBtn">
+        회원가입
+      </button>
 
       <div class="extra">
         <a href="login.html">이미 계정이 있으신가요?</a>
       </div>
 
-    </div>
+    </form>
 
   </div>
-<script src="../js/script.js"></script>
+
+  <script src="../js/signup.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
