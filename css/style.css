@@ -9,7 +9,7 @@ ul, ol {
 }
 
 body {
-  background: #0b0b0b;
+  background: #000;
   color: #ededed;
   font-family: 'Noto Sans KR', sans-serif;
   padding-top: 80px;
@@ -32,7 +32,7 @@ a {
   align-items: center;
   padding: 20px 80px;
 
-  background: rgba(11, 11, 11, 0.8);
+  background: #000;
   backdrop-filter: blur(6px);
   border-bottom: 1px solid #222;
 }
@@ -113,42 +113,30 @@ a {
   color: #fff;
 }
 
-/* HERO */
-.hero {
-    position: relative;
-    height: 600px;
-
-    background: url("../images/mainlogo.jpg")
-    center center/contain no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-}
-
-
-.hero-overlay {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.hero-overlay p {
-  margin-bottom: 20px;
-  color: #aaa;
-}
 .world {
     padding: 100px 20px;
     text-align: center;
     color: #aaa;
 }
 
+/* main-visual */
+.main-visual{
+    width:100%;
+    display:flex;
+    justify-content:center; /* 가로 중앙 */
+}
+
+.main-logo{
+    width: 1000px;
+    height: 1000px;
+}
+
 .btn {
     padding: 12px 24px;
+    margin: 0 20px;
     border: 1px solid #aaa;
     background: transparent;
-    color: #aaa;
+    color: #fff;
     cursor: pointer;
     transition: .3s;
 }
@@ -172,7 +160,7 @@ h1{
     max-width: 1400px;
     margin: 0 auto;
 
-    padding: 80px;
+    padding: 10px 80px 80px;
 }
 
 .notice-box {
